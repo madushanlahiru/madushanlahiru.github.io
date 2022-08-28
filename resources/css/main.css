@@ -1,0 +1,53 @@
+
+:root {
+    --mainBgColor: #181818;
+    --mainTextColor: #adb0b1;
+}
+
+* {
+    background-color: var(--mainBgColor);
+    color: var(--mainTextColor);
+}
+
+body {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+}
+
+header {
+    /*  */
+}
+
+.header-card {
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+
+.profile-picture {
+    margin: 5% 0 5% 5%;
+}
+
+.profile-picture img {
+    height: 25vh;
+    border-radius: 50%;
+}
+
+.header-content {
+    width: 75%;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 1.2em;
+}
+
+.header-content p {
+    text-align: justify;
+}
+
+main {
+    flex-direction: column;
+}
