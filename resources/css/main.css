@@ -14,26 +14,14 @@ body {
     margin: 0 auto;
 }
 
-.flex-container {
-    display: flex;
-}
-
-header {
-    /*  */
-}
-
 .header-card {
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-content: space-around;
-}
-
-.profile-picture {
-    margin: 5% 0 5% 5%;
+    display: flex;
+    margin-top: 5%;
 }
 
 .profile-picture img {
-    height: 25vh;
+    width: 100%;
+    height: auto;
     border-radius: 50%;
 }
 
@@ -46,6 +34,16 @@ header {
 
 .header-content p {
     text-align: justify;
+}
+
+.header-content a {
+    text-decoration: none;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 main {

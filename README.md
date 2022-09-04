@@ -1,2 +1,2 @@
 # madushanlahiru.github.io
-Madushan Lahiru
+[Madhushan Lahiru](https://madushanlahiru.github.io/ "Madhushan Lahiru")
