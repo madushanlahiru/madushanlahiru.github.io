@@ -2,15 +2,18 @@
 :root {
     --mainBgColor: #181818;
     --mainTextColor: #adb0b1;
+    --mainBoxColor: #ffffff;
 }
 
 * {
     background-color: var(--mainBgColor);
     color: var(--mainTextColor);
+
+    line-height: 1.5;
 }
 
 body {
-    max-width: 900px;
+    max-width: 600px;
     margin: 0 auto;
 }
 
@@ -46,6 +49,73 @@ body {
     justify-content: space-evenly;
 }
 
-main {
-    flex-direction: column;
+
+/* main */
+
+.skills span {
+    display: inline-block;
+    height: fit-content;
+    width: fit-content;
+    padding: 3px;
+    margin: 2px 0;
+    background-color: var(--mainBoxColor);
+    border-radius: 5px;
+    color: var(--mainBgColor);
+}
+
+/* education */
+
+.timeline-list {
+	padding-bottom: 1em;
+	position: relative;
+	max-width:700px;
+	margin:0 auto;
+    list-style: none;
+    padding-left: 5em;
+}
+
+.timeline-list::before {
+    content: "";
+    border-left: 5px solid #fff;
+    left: 2.18em;
+    top: 2em;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+}
+
+.timeline-list::after {
+    content: "";
+    clear:both;
+    position: absolute;
+    bottom: 0px;
+    left: 1.45em;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: none repeat scroll 0% 0% #fff;
+    border: 5px solid #fff;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-list li {
+	margin:0 0 2em 0;
+    position: relative;
+}
+
+.timeline-list li::before {
+    content: "";
+    position: absolute;
+	top: 0px;
+	left: -3.65em;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: none repeat scroll 0% 0% var(--mainBgColor);
+	border: 3px solid #fff;
+}
+
+.timeline-item p {
+    margin: 0;
 }
