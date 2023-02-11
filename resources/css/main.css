@@ -5,16 +5,12 @@
     --mainBoxColor: #ffffff;
 }
 
-* {
+body {
     background-color: var(--mainBgColor);
     color: var(--mainTextColor);
-
-    line-height: 1.5;
-}
-
-body {
     max-width: 900px;
     margin: 0 auto;
+    line-height: 1.5;
 }
 
 .header-card {
@@ -41,6 +37,7 @@ body {
 
 .header-content a {
     text-decoration: none;
+    color: var(--mainTextColor);
 }
 
 .social {
@@ -76,7 +73,7 @@ body {
 
 .timeline-list::before {
     content: "";
-    border-left: 5px solid #fff;
+    border-left: 5px solid var(--mainTextColor);
     left: 2.18em;
     top: 2em;
     height: 100%;
@@ -94,8 +91,8 @@ body {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: none repeat scroll 0% 0% #fff;
-    border: 5px solid #fff;
+    background: none repeat scroll 0% 0% var(--mainTextColor);
+    border: 5px solid var(--mainTextColor);
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
@@ -113,7 +110,7 @@ body {
 	height: 25px;
 	border-radius: 50%;
 	background: none repeat scroll 0% 0% var(--mainBgColor);
-	border: 3px solid #fff;
+	border: 3px solid var(--mainTextColor);
 }
 
 .timeline-item p {

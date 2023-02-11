@@ -9,14 +9,12 @@
 
     <script src="https://kit.fontawesome.com/ba56300757.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="resources/css/main.css">
-    <!-- <link rel="stylesheet" type="text/css" href="resources/css/toggle-switch.css"> -->
+    <link rel="stylesheet" type="text/css" href="resources/css/toggle-switch.css">
 </head>
 <body>
 
-    <!-- <button name="theme" onclick="themeChange()"><i class="fas fa-sun"></i></button> -->
-
     <!-- Toggle Switch -->
-    <!-- <div class="switch-container">
+    <div class="switch-container">
         <input type="checkbox" id="switch" />
         <label for="switch">
             <i class="fas fa-sun"></i>
@@ -24,14 +22,6 @@
             <span class="ball"></span>
         </label>
     </div>
-
-    <script>
-        function themeChange() {
-            let root = document.documentElement;
-
-            root.style.setProperty('--mainBgColor', '#ffffff');
-        }
-    </script> -->
 
     <header>
         <section class="header-card">
@@ -153,4 +143,22 @@
     </main>
 
 </body>
+
+<script>
+    root = document.documentElement;
+    button = document.getElementById('switch');
+    button.addEventListener('click', function (){
+        if(button.checked) {
+            root.style.setProperty('--mainBgColor', '#adb0b1');
+            root.style.setProperty('--mainTextColor', '#181818');
+            root.style.setProperty('--mainBoxColor', '#181818');
+        } else {
+            root.style.setProperty('--mainBgColor', '#181818');
+            root.style.setProperty('--mainTextColor', '#adb0b1');
+            root.style.setProperty('--mainBoxColor', '#ffffff');
+        }
+    });
+    
+</script>
+
 </html>
