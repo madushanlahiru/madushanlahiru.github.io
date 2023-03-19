@@ -13,6 +13,8 @@ body {
     line-height: 1.5;
 }
 
+/* Header */
+
 .header-card {
     display: flex;
     margin-top: 5%;
@@ -48,6 +50,10 @@ body {
 
 
 /* main */
+
+.main hr {
+    border: 1px solid;
+}
 
 .skills span {
     display: inline-block;
@@ -115,4 +121,16 @@ body {
 
 .timeline-item p {
     margin: 0;
+}
+
+.timeline-item h3 {
+    margin-bottom: 10px;
+}
+
+.lerning-archivement {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: left;
+    column-gap: 30px;
+    row-gap: 5px;
 }
